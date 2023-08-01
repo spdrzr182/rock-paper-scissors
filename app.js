@@ -1,3 +1,9 @@
+
+//--------Computer Logic-------//
+//# Create a function that returns a number from one to three
+//# Attach that number to rock, paper or scissors
+//# Return the value (rock, paper or scissors)
+
 function computerPlay() {
     const number = (Math.random() * 3);
             if (number <= 1) {
@@ -6,10 +12,18 @@ function computerPlay() {
                 return 'Scissors';
             }
             else return 'Paper';
-} 
+}
+
+
+//# Initialize playerScore and computerScore
 
 let computerScore = 0;
 let playerScore = 0;
+
+
+//-----------Game Logic---------------//
+//# Create a function that takes and compares two parameters and returns a 
+//---a string that declares the winner and adds up score using if, else if and else format
 
 function playRound(playerSelection, computerSelection) {
     if (playerSelection == 'rock' && computerSelection == 'Scissors') {
@@ -35,6 +49,11 @@ function playRound(playerSelection, computerSelection) {
 }
 
 
+//-------------Game Function-------------//
+//# Create a function that prompts player response and passes it through toLowerCase()
+//--- use a for loop through the logic five times
+//--- set the parameter for computerSelection to compturePlay()
+//---use a if, else if and else logic to determine the fianl winner
 
 function game() {
     for (let i = 0; i < 5; i++) {
@@ -50,5 +69,54 @@ function game() {
     } else
         console.log(`You tied. Final Score: ${playerScore} to ${computerScore}`);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
