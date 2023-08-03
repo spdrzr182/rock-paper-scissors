@@ -50,6 +50,8 @@ img {
     flex-direction: row;
     justify-content: space-around;
     height: 60%;
+    border: 1px solid black;
+    margin-bottom: -10em;
 }
 
 h3 {
